@@ -1,12 +1,17 @@
-#Prerequisite
-#Docker, Kafka (kafka_2.13-3.2.0) was used for this project
-#Docker images: bitnami/zookeeper:latest, bitnami/kafka:latest and qduong/cloudera-java8:v1
-#Java8, Java IDE (IntelliJ or Eclipse), you can use VS Code to facilitate docker integration
-#Knowing some batch/SSH command
+This is a project reading data from Tweeter and using SparkStream
+To save the data to HBase. 
+We configured a Kafka producer where we send the read data from the stream
+and we read that data through a consumer and We used SparkSql to store that data into Hbase
+
+# Prerequisite
+# Docker, Kafka (kafka_2.13-3.2.0) was used for this project
+# Docker images: bitnami/zookeeper:latest, bitnami/kafka:latest and qduong/cloudera-java8:v1
+# Java8, Java IDE (IntelliJ or Eclipse), you can use VS Code to facilitate docker integration
+# Knowing some batch/SSH command
 #Spark, SparkStream and Hbase will be mandatory to understand the code
 
-#I - LOCAL MODE
-#1 - Start the ZooKeeper service
+# I - LOCAL MODE
+# 1 - Start the ZooKeeper service
 # Note: Soon, ZooKeeper will no longer be required by Apache Kafka.
 bin/zookeeper-server-start.sh config/zookeeper.properties
 #2 - Start the Kafka broker service
