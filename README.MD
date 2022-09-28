@@ -1,3 +1,8 @@
+Link to video tutorials:
+part1: https://web.microsoftstream.com/video/28d32141-861d-4651-adb1-ad3884504de2
+part2: https://web.microsoftstream.com/video/ea75ef4f-502d-41f7-a787-3fb5618bfb5e
+part3: https://web.microsoftstream.com/video/7dd0baf1-11ff-4c18-8edb-f6b2683a3cb7
+
 This is a project reading data from Tweeter and using SparkStream
 To save the data to HBase. 
 We configured a Kafka producer where we send the read data from the stream
